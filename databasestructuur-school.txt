@@ -1,0 +1,50 @@
+CREATE DATABASE school;
+
+USE school;
+
+CREATE TABLE Leerlingen (
+leerlingID int NOT NULL AUTO_INCREMENT,
+leerlingNaam varchar(255),
+leerlingAchternaam varchar(255) NOT NULL,
+leerlingGebDat DATE,
+leerlingAdres varchar(255),
+leerlingPlaats varchar(255),
+leerlingLand varchar(255),
+leerlingEmail varchar(255)
+PRIMARY KEY (leerlingID)
+);
+
+CREATE TABLE Klassen (
+klasID int NOT NULL AUTO_INCREMENT,
+klasNaam varchar(255)
+PRIMARY KEY (klasID)
+);
+
+CREATE TABLE Docenten (
+docentID int NOT NULL AUTO_INCREMENT,
+docentNaam varchar(255),
+docentAchternaam varchar(255) NOT NULL,
+docentGebDat DATE,
+docentAdres varchar(255),
+docentPlaats varchar(255),
+docentLand varchar(255),
+docentEmail varchar(255)
+PRIMARY KEY (docentID)
+);
+
+CREATE TABLE Lokalen (
+lokID int NOT NULL AUTO_INCREMENT,
+lokNaam varchar(255)
+PRIMARY KEY (lokID)
+);
+
+CREATE TABLE Vakken (
+vakID int NOT NULL AUTO_INCREMENT,
+vakNaam varchar(255)
+PRIMARY KEY (vakID)
+);
+
+
+
+
+
